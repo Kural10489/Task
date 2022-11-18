@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localstorage</title>
+    <style>
+        nav{
+            background-color: lavender;
+        }
+        #localstorageValue{
+            position: relative;
+            left: 600px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        FaceBook
+        <span id="localstorageValue"></span>
+    </nav>
+    <label for="">Enter Your Name: </label>
+    <input type="text" id="localstorageinput">
+    <button id="savelocalstorage">Save</button> 
+    <button id="Readlocalstorage">Read</button>
+     <button id="deletelocalstorage">Delete</button>
+   <!--  <p id="localstorageValue"></p> -->
+<script>
+    
+    if(window.open){
+    
+    window.setTimeout(Sessionin,40000);
+    }
+    else if(window.closed){
+
+        window.setTimeout(Sessionout,4);
+    }
+    document.cookie="username=kural";
+    var localstorageinput=document.getElementById('localstorageinput');
+    var savelocalstorage=document.getElementById('savelocalstorage');
+    var Readlocalstorage=document.getElementById( 'Readlocalstorage');
+    var localstorageValue=document.getElementById('localstorageValue');
+
+    savelocalstorage.onclick=function(){
+         localStorage.setItem("name",localstorageinput.value);
+    }
+    Readlocalstorage.onclick=function(){
+        localstorageValue.textContent="Hi "+localStorage.getItem("name")+" You have logged In";
+    }
+    deletelocalstorage.onclick=function(){
+        localStorage.clear();
+    }
+    function Sessionout(){
+        sessionStorage.clear();
+    }
+    function Sessionin(){
+        sessionStorage.setItem("name","Kural--");
+    }
+</script>
+</body>
+</html>

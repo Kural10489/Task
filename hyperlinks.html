@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperlinks</title>
+    <style>
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    a{
+        text-decoration: none;
+    }
+     .link{
+        position: relative;
+        left: 650px;
+     }
+    
+     .imagelink{
+        position: relative;
+        left: 550px;
+     }
+     h4{
+        background-color: #d9b3ff;
+     }
+     h1{
+        position: relative;
+        left: 650px;
+     }
+     img{
+        width: 300px;
+     }
+    button{
+        border-radius: 10%;
+        background-color: darkviolet;
+        color: azure;
+    }
+    button:hover{
+        background-color: white;
+        color: black;
+    }
+
+    #l:hover+#lo{
+     display: block;
+     width: 100px;
+     height: 50px;
+     font-size: 10px;
+    }
+    #lo{
+        display: none;
+    }
+    </style>
+</head>
+<body>
+    <h1>Hyperlinks</h1>
+
+        <h4>Direct Link</h4>
+        <div class="link">
+    
+        <a href="https://www.aspiresys.com/">Click Here</a>
+    </div>
+    <h4>Link inside a button </h4>
+    <div class="link">
+        <a href="https://www.aspiresys.com/"><button>Click me</button></a>
+</div>
+<h4>Link inside a image</h4>
+<div class="imagelink">
+    <a href="https://www.aspiresys.com/">  
+    <img src="https://www.temenos.com/wp-content/uploads/2019/06/partner-services-aspire-landscape-image-19-Jun-27.jpg" alt="" srcset=""></a>  
+</div>
+
+<h4>Link to Mail Someone</h4>
+<div class="link">
+    <a href="mailto:kuralanban5@gmail.com">Send Email</a>  
+   
+</div>
+
+<h4>Link title</h4>
+<div class="link">
+    <a href="https://www.aspiresys.com/" title="This link will direct you to aspire official site">Hover this link</a>  
+   
+</div>
+<a href="" id="l">link</a>
+<div id="lo">
+    <img src="aspire.jpg" alt="" srcset="" style="width: 100px;">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio excepturi dolore et consequuntur, incidunt esse alias odio fuga pariatur sed corrupti asperiores voluptas assumenda consectetur, sint iure fugit, earum aliquid!
+</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+<style>
+    details{
+        border: 3px solid black;
+        border-radius: 10px;
+        width: 300px;
+    }
+    summary{
+        margin-top: .5em;
+        margin-left: .5em;
+        padding: 2px;
+    }
+    details[open]{
+        padding: 10px;
+        background-color: gray;
+        text-align: center;
+    }
+    details[open] summary{
+        border-bottom: 1px solid black;
+
+    }
+</style>
+</head>
+<body>
+    <div >
+        <details>
+            <summary>Name</summary>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, numquam.
+        </details>
+    </div>
+</body>
+</html>

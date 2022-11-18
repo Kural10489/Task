@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        body{
+            
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h4{
+            background-color: lavender;
+        }
+        #scroll,#demo{
+            height: 300px;
+            width: 400px;
+            overflow: scroll;
+            
+        }
+        .highlight{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body onresize="resizeFunction()">
+    <h4>Scroll Event</h4>
+    <div id="scroll" onscroll="scrollFunction()">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam ullam amet suscipit aliquam reprehenderit, exercitationem, modi quidem nihil, accusantium vitae incidunt deleniti deserunt adipisci perspiciatis molestias molestiae corporis voluptates fuga non officiis. Optio dicta dignissimos accusantium repellendus quam, obcaecati ratione impedit sequi? Eaque unde saepe provident facilis libero repellat maiores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, alias. Perspiciatis repellat consequatur nulla animi nam, ducimus dolorem esse eligendi reiciendis. Consectetur dolor quo suscipit provident totam? Ipsum accusantium fugit, beatae perferendis sequi necessitatibus. Itaque quasi, voluptatem quisquam dolores cumque ipsa odit iure. Sunt laudantium vel totam adipisci quasi vero quod aut ut laborum numquam perferendis pariatur minus rem repellat aspernatur nostrum saepe sint doloremque, dolorum iste. Pariatur eveniet ex nesciunt a accusantium aliquam, suscipit aliquid quia facere eum laudantium voluptatibus recusandae. Aliquid accusamus laudantium perspiciatis ad corrupti atque minima sequi fuga veritatis doloribus totam neque, doloremque libero odio deserunt.
+    </div>
+
+    <h4>Key Event</h4>
+    <div id="key">
+        <span class="highlight">Function will be triggerd while Pressing a key </span>
+       <input type="text" onkeypress="keyFunction()">
+       <br>
+       
+    </div>
+  <h4>Form Events</h4>
+    <div>
+        <form action="" onsubmit="sumitFunction()">
+            enter ur Name: <input type="text" name="" id="">
+            <input type="submit">
+        </form>
+    </div>
+
+    <script>
+
+        function scrollFunction(){
+        document.getElementById("scroll").style.color="white";
+        document.getElementById("scroll").style.backgroundColor="black";
+        }
+        
+        function keyFunction(){
+            alert("key pressed!");
+        }
+        
+        function resizeFunction(){
+            alert('Window Resized')
+        }
+        function sumitFunction(){
+            alert('Form is submited')
+        }
+    </script>
+</body>
+</html>

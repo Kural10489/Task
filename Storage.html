@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage</title>
+</head>
+<body>
+    <nav>
+        Instagram
+        <span id="sessionloggedin"></span>
+    </nav>
+
+    <div>
+        Enter Username: <input type="text" id="sessionUsername">
+    </div>
+    <button id="sessionsave">
+        login
+    </button>
+    <button id="sessiondelete">
+        logout
+    </button>
+    <script> 
+    var sessionUsername=document.getElementById('sessionUsername');
+    var sessionloggedin=document.getElementById('sessionloggedin');
+    var sessionsave=document.getElementById('sessionsave');
+    var sessiondelete=document.getElementById('sessiondelete');
+   
+    sessionsave.onclick=function(){
+       sessionStorage.setItem("name",sessionUsername.value);
+    }
+    sessiondelete.onclick=function(){
+        sessionStorage.clear();
+    }
+
+    </script>
+</body>
+</html>
