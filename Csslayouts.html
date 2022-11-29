@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Layouts</title>
+<style>
+    /*  To set the same font all over the content */
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Conainer div (atline 143) is styled */
+    .container{
+        border: black solid;
+        margin: 10px;
+    }
+
+/* To highlight all my h4 headings */
+
+.h4{
+ background-color: yellow;
+ 
+}
+
+/* Aligning the h3 tag (at line 146) in center  */
+.flexh3{
+    margin: 0;
+    height: 60px;
+    background-color: purple;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+.flex{
+    display: flex;
+    
+}
+/* Flex directed to column(at line 182) */
+.flexc{
+    
+    flex-direction: column;
+    
+}
+
+.flexbox{
+    
+    background-color:thistle;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+/* Navbar Structure using Buttons and a tags (line 202 to 225)*/
+.flexbtn,.flexbtn2{
+    display: flex;
+    justify-content: space-around;
+}
+.flexbtn2{
+    background-color: lavender;
+    height: 40px;
+
+}
+.flexbtn2 a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+button:first-child{
+align-self: flex-end;
+}
+/* Exploring grid Column Structure */
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+.grid p{
+    border: solid black;
+    margin: 10px;
+    background-color: indigo;
+    color: aliceblue;
+    
+}
+/* Creating  a Blog type content using flex and grid */
+.gridcontent header,footer{
+    border: black solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+
+  
+}
+.gridarticle1{
+    width: 150px;
+}
+.gridarticle2{
+    width: 500px;
+}
+.gridcontainer{
+  display: flex;
+  text-align:left;
+  padding: 10px;
+}
+.line{ 
+
+    height: 200px;
+    border: 2px black solid;
+    margin: 7px;
+}
+/* Separating  page into 3 column*/
+.col{
+    column-count: 3;
+    column-rule: dotted darkblue 5px;
+}
+
+/* Css Positions */
+.positionbox{
+    border: 2px black solid;
+    height: 120px;
+    margin: 10px;
+
+}
+.static,.relative,.absolute,.sticky{
+    border: 2px red solid;
+    background-color: black;
+    height: 50px;
+    width: 60px;
+    left: 30px; 
+    /* top: 50px; */
+}
+.static{
+    position: static;
+}
+.absolute{
+    position: absolute;
+}
+.relative{
+    position: relative;
+}
+.sticky{
+    position: sticky;
+    
+}
+@media screen and (max-width:694px){
+    body{
+        background-color: blueviolet;
+    }
+}
+</style>
+</head>
+<body>
+    <h4 class="h4">Flex Row</h4>
+    <div class="container">
+    <h3 class="flexh3">Kural</h3>
+    <div class="flex">
+        
+        <div class="flexbox">
+        <h4>Flex</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolorem dolore placeat, mollitia magnam sit nihil magni explicabo quidem corrupti! Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <div class="flexbox">
+        <h4>Flex</h4>
+        <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sint numquam odit, mollitia voluptatum quidem quis nisi eum rerum consectetur.</p>
+    </div>
+
+    <div class="flexbox">
+        <h4>Flex</h4>
+        <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus hic nostrum similique iste, amet non id delectus nemo tempore ad?</p>
+    </div>
+    <div class="flexbox">
+        <h4>Flex</h4>
+        <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus hic nostrum similique iste, amet non id delectus nemo tempore ad?</p>
+    </div>
+    <div class="flexbox">
+        <h4>Flex</h4>
+        <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus hic nostrum similique iste, amet non id delectus nemo tempore ad?</p>
+    </div>
+     <div class="flexbox">
+        <h4>Flex</h4>
+        <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus hic nostrum similique iste, amet non id delectus nemo tempore ad?</p>
+    </div>
+    </div>
+</div>
+<!-- Flex column -->
+<h4 class="h4">Flex Column</h4>
+<div class="container">
+    <h3 class="flexh3">Kural</h3>
+    <div class="flexc">
+        
+        <div class="flexbox">
+        <h4>Flex</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolorem dolore placeat, mollitia magnam sit nihil magni explicabo quidem corrupti! Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <div class="flexbox">
+        <h4>Flex</h4>
+        <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sint numquam odit, mollitia voluptatum quidem quis nisi eum rerum consectetur.</p>
+    </div>
+
+    <div class="flexbox">
+        <h4>Flex</h4>
+        <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus hic nostrum similique iste, amet non id delectus nemo tempore ad?</p>
+    </div>
+    </div>
+</div>
+<!-- Flex buttons -->
+<h4 class="h4">Flex buttons</h4>
+<div class="container">
+    <div class="flexbtn">
+        <button>Flexbtn</button>
+        <button>Flexbtn</button>
+        <button>Flexbtn</button>
+        <button>Flexbtn</button>
+        <button>Flexbtn</button>
+    </div>
+    
+
+</div>
+
+<!-- Navbar  using a tags  -->
+<div class="container">
+    <div class="flexbtn2">
+       <a href="">Home</a>
+       <a href="">Menu</a>
+       <a href="">Contact</a>
+       <a href="">About</a>
+    </div>
+    
+</div>
+
+<!-- Grid -->
+<h4 class="h4">Grid</h4>
+<div class="grid">
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+</div>
+
+<div class="gridcontent">
+<header>This is my content</header>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi fugiat consequatur a quibusdam provident accusantium fugit fuga culpa pariatur! Modi fugiat praesentium corrupti tempore optio, ea vero, quos in molestiae quia laudantium maiores sapiente sunt eligendi neque explicabo asperiores soluta ducimus quam accusantium dolorem accusamus! Quis, illo. Ipsum similique commodi quos odit ducimus, dolorum aspernatur velit temporibus tempora quia deleniti ut voluptates odio veniam quis nobis facere minus molestias impedit dolorem recusandae totam! Sed veritatis velit maiores tempora odio doloribus excepturi fuga nobis doloremque? Temporibus ipsam magni, quasi repellendus, optio earum blanditiis repellat sed quia laborum dolores provident vel excepturi.</p>
+<div class="gridcontainer">
+    
+<div class="gridarticle1">
+    <h3>Other thinhs</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro qui rerum placeat optio sunt laborum architecto deleniti veritatis amet dignissimos?</p>
+</div>
+<div class="line"></div>
+<div class="gridarticle2">
+    <h3>My article</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro qui rerum placeat optio sunt laborum architecto deleniti veritatis amet dignissimos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ad rem dignissimos quibusdam placeat inventore eveniet esse, ut, repellendus temporibus quia eius, error hic quo facere culpa. Fugit necessitatibus similique minima consectetur eaque ullam vero mollitia neque accusantium id inventore, nostrum dignissimos exercitationem recusandae nemo. Ut commodi illum sunt corrupti.</p>
+</div>
+</div>
+<footer>Contact me at @example.com</footer>
+</div>
+
+<h4 class="h4">multi-col layout</h4>
+<div class="col">
+    <div>
+      <h1>Simple 3 Column Layouts</h1>
+    </div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dolores similique enim quidem harum minus perferendis illum laboriosam quasi, ipsa ratione magnam odit, adipisci perspiciatis dolorum soluta aliquid quae maxime?</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente earum dignissimos omnis praesentium ab necessitatibus placeat illum. Odio id eaque atque aut ad nam ipsum nesciunt architecto dolore! Voluptatum vitae aperiam perferendis inventore, laborum officia nam blanditiis asperiores dolores corporis, expedita vel illum ratione omnis in autem quo ea molestiae perspiciatis commodi odit delectus corrupti possimus! Error dolores autem iusto!</div>
+</div>
+<!-- Css Positions -->
+<div class="positionbox">
+    <h4 class="h4">static</h4>
+    <div class="static"></div>
+</div>
+
+<div class="positionbox">
+    <h4 class="h4">sticky</h4>
+    <div class="sticky"></div>
+</div>
+<div class="positionbox">
+    <h4 class="h4">absolute</h4>
+    <div class="absolute"></div>
+</div>
+<div class="positionbox">
+    <h4 class="h4">Relative</h4>
+    <div class="relative"></div>
+</div>
+
+</body>
+</html>

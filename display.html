@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+h4{
+background-color: aliceblue;
+
+    }
+ul{
+display:flex;
+border:1px solid black;
+}
+li{
+border:2px solid violet;
+padding: 15px;
+margin: 5px;
+}
+span{
+display:block;
+border: 1px solid violet; 
+}
+.inline{
+    display: inline;
+}
+.box{
+ border: solid crimson 1px;
+ padding: 40px;
+ margin: 10px;
+ background-color: gold;
+ width: 300px;
+ height: 100px;
+}
+.alternative{
+    box-sizing: border-box;
+}
+.padding{
+width: 300px;
+border:1px solid black ;
+background-color: lavender;
+padding: 3%;
+}
+.margin{
+margin: 10px ;
+border: 2px solid black;
+
+}
+.marginPtag1{
+border: solid red;
+margin-bottom: 25px;
+}
+.marginPtag2{
+border: solid red;
+margin-top: 40px;
+}
+.bgimgsize{
+    display: block;
+   
+    
+}
+
+.bgcover{
+ 
+    
+    object-fit: cover;
+}
+.bgcontain{
+    
+    object-fit: contain;
+    
+    
+}
+.bgfill{
+    object-fit: fill;
+}
+.bgcontain,.bgcover,.bgfill{
+    border: black SOLID;
+    width: 600px;
+    height: 400px;
+}
+.Tbox{
+    margin: 10px;
+    display: inline-block;
+    border: solid black;
+    background-color: yellow;
+    
+}
+.Tbox,.verticalDiv,.HorizontalDiv{
+
+padding: 10px;
+
+}
+
+.HorizontalDiv{
+writing-mode: vertical-lr;
+margin: 0px 0px 0px 400px;
+height: 300px;
+background-color: lavender;
+border: solid black;
+}
+.verticalDiv{
+    margin: 0px 300px 0px 0px;
+    background-color: lavender;
+    border-top: 2px solid;
+    border: dashed rosybrown;
+    width: 300px;
+}
+.overflowx{
+    border: solid black;
+    width: 200px;
+    height: 100px;
+    overflow: scroll;
+}
+.maxlength{
+    border: black solid;
+    margin: 10px;
+    max-height: 30px;
+    max-width: 400px;
+}
+.invox{
+   background-color: lavender;
+   margin: 10px;
+   border: solid black;
+   width: 200px;
+   border-collapse: collapse;
+}
+.invox tr th{
+    border-bottom: 2px solid black;
+    background-color: blueviolet;
+}
+.invox tr td{
+    padding: 5px 0px 0px 25px;
+}
+.invox tr td:hover{
+    background-color: black;
+    color: aliceblue;
+}
+.table{
+    border-collapse: collapse;
+    border: 3px solid purple;
+    
+}
+.table td{
+    padding: 5px 5px 0 20px;
+}
+.table tr:nth-child(even){
+    background-color: #e495e4;
+}
+.table tr:nth-child(odd){
+    background-color: #ff33cc;
+}
+</style>
+</head>
+<body> 
+    <h4>Display Flex</h4>
+<!--  Display Flex -->
+    <ul>
+        <li>Kural</li>
+        <li>kural</li>
+        <li>kural</li>
+    </ul>
+
+<h4>Inline and Block Display</h4>
+<!-- Inline and Block Display -->
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, optio.<span>Kural</span> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, debitis!</p>
+
+
+<p class="inline">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, obcaecati.</p>
+<p class="inline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, optio.</p>
+
+<h4>Border Box</h4>
+<!-- Border Box -->
+
+<div class="box">Lorem ipsum dolor sit amet.</div>
+<div class="box alternative">Lorem ipsum dolor sit amet.</div>
+
+<!-- padding -->
+
+<h4>padding </h4>
+<div class="padding">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, aliquam.
+</div>
+
+<h4>Margin </h4>
+<!-- Margin -->
+
+<div class="margin">
+    <p class="marginPtag1">Lorem ipsum dolor sit amet.</p>
+    <p class="marginPtag2">Lorem ipsum dolor sit amet.</p>
+
+</div>
+
+<!-- Object fit -->
+<h4>Object-Fit</h4>
+<div class="bgimgsize">
+    
+      <img class="bgcontain" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGjt3AuAlsgYnvhyerCp9CGMWFCG2JUXrMYRjcjn9h25wTSR8iOVVMTO4tc7-q77i_fXg&usqp=CAU" alt="">
+
+
+    <img class="bgcover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGjt3AuAlsgYnvhyerCp9CGMWFCG2JUXrMYRjcjn9h25wTSR8iOVVMTO4tc7-q77i_fXg&usqp=CAU" alt="">
+    
+    <img class="bgfill" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGjt3AuAlsgYnvhyerCp9CGMWFCG2JUXrMYRjcjn9h25wTSR8iOVVMTO4tc7-q77i_fXg&usqp=CAU" alt="">
+</div>
+<h4>Text formating</h4>
+<!-- Text Format -->
+<div class="Tbox">
+<div class="verticalDiv">
+
+    <h4>Heading</h4>
+    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod obcaecati illum amet nisi officia excepturi ea enim deserunt architecto qui.
+    </p>
+</div>
+<div class="HorizontalDiv">
+
+    <h4>Heading</h4>
+    <p>Lorem ipsum dolor sit amet. L
+    </p>
+</div>
+</div>
+
+<!-- overflow -->
+<h4>Overflow</h4>
+<div class="overflowx">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, nulla corporis eligendi excepturi neque officia blanditiis officiis repellat eos pariatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem officia quia maxime maiores quae voluptas, fugiat laudantium, dicta nam tempore a numquam eligendi dolorem atque corporis obcaecati illum hic. Placeat totam quam error inventore explicabo magni porro atque molestiae maxime?</p>
+</div>
+
+<br>
+<!-- min/max length -->
+<h4>Content is overflowed because the maximum length assigned is smaller</h4>
+<div class="maxlength">
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus fugiat tempora quasi tenetur velit veritatis assumenda delectus veniam enim cupiditate.
+</div>
+
+<br>
+<h4>Table styling</h4>
+
+<table class="invox">
+ 
+    <tr>
+      
+        <th >1</th>
+        <th>2</th>
+        <th>3</th>
+        
+    </tr>
+
+    <tr>
+        <td  >4</td>
+        <td>5</td>
+        <td>6</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+    </tr>
+
+</table>
+<table class="table">
+    
+        <th>Team</th>
+        <th>Captain</th>
+        <th>IPL Trophy</th>
+    
+    <tr>
+        <td>Csk</td>
+        <td>Dhoni</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Rcb</td>
+        <td>Kholi</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>Mi</td>
+        <td>Rohit</td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td>RR</td>
+        <td>Sanju</td>
+        <td>1</td>
+    </tr>
+</table>
+</body>
+</html>
