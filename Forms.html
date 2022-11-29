@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body{
+        background-color: lavender;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .center{
+            height:700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .user{
+            display: flex;
+            flex-direction: column;
+        }
+        .centerbtn{
+           position: relative;
+           top: 25px;
+           left:130px ;
+           height: 35px;
+           width: 110px;
+           
+        }
+        .form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: black 4px solid; */
+            background-color: slategray;
+            height: 400px;
+            padding: 10px;
+            border-radius: 20px;
+            border: 3px solid black;
+        }
+        .form:hover{
+            background-color: blueviolet;
+            border-radius: 20px;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+
+<div class="form">
+    <form action="#" method="get">
+
+        <div class="user">
+ <label for="">Create Username</label>
+ <input type="text">
+ <br>
+ <label for="">Create Password</label>
+ <input type="password" name="" id="">
+ <br>
+ <label for="">Confirm Password</label>
+ <input type="password" name="" id="">
+ <br>
+</div>
+
+ <label for="">Payment Mode</label> <br>
+ <img src="https://cdn-images-1.medium.com/max/1200/1*Dw4-tOJ_9myFUywLd3qzjA.png" alt="" style="height:80px;">
+ <input type="radio" name="male" id="" value="Male">
+ <label for="">Paypal</label>
+ <img src="https://uploads-ssl.webflow.com/5fc772e04f6c876a6ec3bf00/60c750a809c0a67367e7ddc6_Blog_HowToInvestInAlphabet.png" alt="" style="height: 80px;">
+ <label for="">Google pay</label>
+ <input type="radio" name="male" id="" value="Female"> <br>
+ <input type="submit" value="Submit" class="centerbtn">
+</form>
+</div>
+
+</div>
+</body>
+</html>
